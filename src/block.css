@@ -11,3 +11,6 @@
 .block-inner.alive{
   background-color: #9f9;
 }
+.block-inner>.popover{
+  display: none;
+}

@@ -14,7 +14,7 @@ class Block extends Component{
     return (
       <div className="block-wapper" style={style}>
         <div className={['block-inner', alive && 'alive'].join(' ')}>
-          {alive}
+          <div className="popover">{alive}</div>
         </div>
       </div>
     )

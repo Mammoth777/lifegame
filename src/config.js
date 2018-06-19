@@ -1,4 +1,4 @@
 export default {
   blockWidth: 50,
-  circle: 2000
+  circle: 1000
 }
