@@ -1,0 +1,12 @@
+.board{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  background-color: #fff;
+  border: 1px solid #e3e4e6;
+}
+.board>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

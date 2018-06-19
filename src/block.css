@@ -1,0 +1,13 @@
+.block-inner{
+  width: 80%;
+  height: 80%;
+  background-color: #e3e4e6;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s linear;
+}
+.block-inner.alive{
+  background-color: #9f9;
+}
