@@ -22,7 +22,8 @@ class Board extends React.Component{
     let size = this.props.boardSize
     if(!Number.isInteger(Math.sqrt(size))) return;
     let dotList = new Array(size).fill(0)
-    dotList = dotList.map(ele => Math.random() > .5 ? 1 : 0)
+    // dotList = dotList.map(ele => Math.random() > .5 ? 1 : 0)
+    dotList = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     let history = this.state.lifeHistory
     history.push(dotList)
     this.setState({

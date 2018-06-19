@@ -80,6 +80,11 @@ class Ceil{
         }
         return isAlive
       }(),
+      b: function(){
+        let i = index + rowLen
+        if(i < 0 || i > arr.length) return 0
+        return arr[i]
+      }(),
       rb: function() {
         let isAlive = 1
         if(rightSide.includes(index)){
@@ -111,7 +116,7 @@ function reincarnation(list){
   let tempList = list.map((ele, index, arr) => {
     return new Ceil(ele, index, arr)
   })
-  // console.log(tempList, 'tmp');
+  console.log(tempList, 'tmp');
   let resultList = tempList.map( ele => ele.isAlive)
   console.log(resultList)
   return resultList
