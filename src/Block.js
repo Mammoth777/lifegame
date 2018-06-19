@@ -6,10 +6,11 @@ class Block extends Component{
   render(){
     const alive = this.props.alive
     const wh = Config.blockWidth + 'px'
+    let circle = Config.circle - 500
     const style = {
       width: wh,
       height: wh,
-      transitionTransition: Config.circle
+      transitionTransition: circle < 0 ? 500 : circle
     }
     return (
       <div className="block-wapper" style={style}>
