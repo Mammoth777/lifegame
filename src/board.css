@@ -13,6 +13,24 @@
 
 .board>.menu{
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 100px;
+  left: 100px;
+  padding: 20px 50px;
+  max-width: 200px;
+  background-color: #ddd;
+  color: #4c4c4b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.menu>button{
+  padding: .5em 1em;
+  border-radius: .5em;
+  outline: none;
+}
+.menu>button:hover{
+  box-shadow:0 0 10px 2px #666a;
+}
+.menu>button:nth-child(n + 2){
+  margin-top: 10px;
 }
